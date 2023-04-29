@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* variables */
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --padding-inline: 40px;
+}
+
+/* utiltiy class */
+
+.container {
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* order-summary */
+
+.order-summary {
+  width: 420px;
+  height: 85%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+/* image-section */
+
+.image-section {
+  height: 240px;
+  background-image: url(images/illustration-hero.svg);
+  background-size: cover;
+  border: 2px solid green;
+  border-radius: 20px 20px 0 0;
+}
+
+/* header section */
+.header {
+  text-align: center;
+}
+
+.header p {
+  color: var(--Desaturated-blue);
+}
+
+/* plan section */
+
+.plan {
+  margin-top: 25px;
+  justify-content: space-between;
+  background-color: var(--very-pale-blue);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+h5 {
+  margin-block: 2px;
+}
+
+.label {
+  gap: 10px;
+}
+
+.change:hover {
+  color: rgb(144, 142, 243);
+  text-decoration: none;
+}
+
+/* buttons section */
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.payment-button {
+  width: 100%;
+  background-color: var(--bright-blue);
+  border-radius: 8px;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  box-shadow: 0 15px 7px 3px var(--pale-blue);
+}
+
+.payment-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.payment-button:hover {
+  background-color: rgb(144, 142, 243);
+}
+
+.cancel-button {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+.cancel-button a {
+  text-decoration: none;
+  color: var(--Desaturated-blue);
+}
+
+.cancel-button a:hover {
+  color: black;
+}
